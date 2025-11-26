@@ -1,56 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Описания фильмов</title>
     <link rel="stylesheet" href="style.css">
+    <title>Кинотеатр</title>
 </head>
 <body>
     <div class="container">
-        <h1>Популярные фильмы</h1>
-        
-        <!-- Фильм 1: Хатико -->
-        <div class="movie-card">
-            <div class="movie-header">
-                <h2>Хатико: Самый верный друг</h2>
-                <button class="show-btn" onclick="toggleDescription('hachiko')">Показать описание</button>
+        <div class="inner">
+            <div class="item">
+                <img src="hachiko.png" alt="Hachiko" class="img">
+                <button class="btn" id="btn1">Хатико</button>
             </div>
-            <div id="hachiko" class="description">
-                <div class="movie-info">
-                    <p><strong>Год выпуска:</strong> 2009</p>
-                    <p><strong>Режиссер:</strong> Лассе Халльстрём</p>
-                    <p><strong>В главных ролях:</strong> Ричард Гир, Джоан Аллен, Сара Ремер</p>
-                    <p><strong>Жанр:</strong> Драма, Семейный</p>
-                </div>
-                <div class="movie-plot">
-                    <p><strong>Описание:</strong> Профессор колледжа Паркер Уилсон находит на вокзале потерявшегося щенка породы акита-ину. Между мужчиной и псом возникает крепкая дружба. Каждый день Хатико провожает и встречает хозяина на станции. Но однажды профессор не возвращается...</p>
-                    <p>Основано на реальной истории верного пса Хатико, который в течение 9 лет продолжал ждать своего умершего хозяина на станции Сибуя в Токио.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Фильм 2: Титаник -->
-        <div class="movie-card">
-            <div class="movie-header">
-                <h2>Титаник</h2>
-                <button class="show-btn" onclick="toggleDescription('titanic')">Показать описание</button>
-            </div>
-            <div id="titanic" class="description">
-                <div class="movie-info">
-                    <p><strong>Год выпуска:</strong> 1997</p>
-                    <p><strong>Режиссер:</strong> Джеймс Кэмерон</p>
-                    <p><strong>В главных ролях:</strong> Леонардо ДиКаприо, Кейт Уинслет, Билли Зейн</p>
-                    <p><strong>Жанр:</strong> Драма, Мелодрама, Исторический</p>
-                </div>
-                <div class="movie-plot">
-                    <p><strong>Описание:</strong> Молодые аристократка Роза и бедный художник Джек случайно встречаются на борту легендарного "Титаника". Несмотря на разницу в социальном статусе, между ними вспыхивают чувства.</p>
-                    <p>Их любовь проходит испытание на прочность, когда "непотопляемый" лайнер сталкивается с айсбергом и начинает тонуть. Фильм основан на реальных событиях крушения "Титаника" в 1912 году.</p>
-                </div>
+            <div class="item">
+                <img src="titanic.png" alt="Titanic" class="img">
+                <button class="btn" id="btn2">Титаник</button>
             </div>
         </div>
     </div>
-
+    <div class="usercard" id="usercard"></div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
